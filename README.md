@@ -1,8 +1,8 @@
-# 🚀 Linux Automation Scripts (DevOps Toolkit)
+# Linux Automation Scripts (DevOps Toolkit)
 
 Production-ready Bash automation scripts for Linux system administration, reliability, and operational excellence.
 
-## ✨ Features
+## Features
 
 - Enterprise-grade logging  
 - systemd service & timer support  
@@ -11,58 +11,44 @@ Production-ready Bash automation scripts for Linux system administration, reliab
 - Production-style error handling  
 - ShellCheck-friendly code  
 
----
+## Included Scripts
 
-## 📦 Included Scripts
-
-### 🔄 Service Watchdog
+### Service Watchdog
 Automatically monitors and restarts critical services.
 
 **Usage:**
 
 sudo ./service-watchdog.sh nginx
 
----
-
-### 📊 Linux Health Monitor
+### Linux Health Monitor
 
 sudo ./linux-health-monitor.sh
 
----
-
-### 💾 Linux Backup
+### Linux Backup
 
 sudo ./linux-backup.sh /etc
 
----
-
-### 🧹 Log Cleanup
+### Log Cleanup
 
 sudo ./log-cleanup.sh
 
----
 
-## 🪵 Logging
+## Logging
 
 /var/log/linux-automation.log
 
----
-
-## ⏱️ systemd Timer Setup
+##systemd Timer Setup
 
 sudo cp systemd/*.service /etc/systemd/system/
 sudo cp systemd/*.timer /etc/systemd/system/
 sudo systemctl daemon-reload
 sudo systemctl enable --now service-watchdog.timer
 
----
-
-## 🕒 Cron Examples
+## Cron Examples
 
 See cron-examples.txt
 
----
 
-## 📄 License
+## License
 
 MIT License
