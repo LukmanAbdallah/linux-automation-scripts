@@ -1,0 +1,8 @@
+[Unit]
+Description=Service Watchdog Monitor
+After=network.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/service-watchdog.sh nginx
+User=root

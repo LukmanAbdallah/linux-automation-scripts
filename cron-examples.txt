@@ -1,0 +1,11 @@
+# Run health check every 5 minutes
+*/5 * * * * /usr/local/bin/linux-health-monitor.sh
+
+# Daily backup at 2 AM
+0 2 * * * /usr/local/bin/linux-backup.sh /etc
+
+# Weekly log cleanup
+0 3 * * 0 /usr/local/bin/log-cleanup.sh
+
+# Service watchdog every 5 minutes
+*/5 * * * * /usr/local/bin/service-watchdog.sh nginx
